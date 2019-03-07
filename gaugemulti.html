@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gauge Widget</title>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="raphael-min.js"></script>
+
+	<style>
+        body{
+            background-color: #f1f1f1;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .chart {
+			width: 250px;
+			height: 140px;
+            float: left;
+            !border: 1px solid blue;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .chart svg { height: 100%; width: 100%;}
+
+
+        .radialkpi-tooltip-body {
+            display: table;
+            background-color: #FFFCB1;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid #FFC7C7;
+            font-size: 0.8em;
+            font-family: Arial, sans-serif;
+            pointer-events:none;
+        }
+
+        .radialkpi-tooltip-line-1 {
+            color: blue;
+        }
+
+        .radialkpi-tooltip-line-2 {
+            color: red;
+        }
+
+        .radialkpi-tooltip-legend {
+            font-weight: bold;
+            padding-right: 8px;
+        }
+
+        .radialkpi-tooltip-line-1  .radialkpi-tooltip-value {
+            font-weight: bold;
+        }
+        
+      
+    </style>
+	
+</head>
+<body>
+    
+    <div id="chart1" class="chart"></div>
+    <div id="chart2" class="chart"></div>
+    <div id="chart3" class="chart"></div>
+    <div id="chart4" class="chart"></div>
+    <div id="chart5" class="chart"></div>
+    <div id="chart6" class="chart"></div>
+    <div id="chart7" class="chart"></div>
+    <div id="chart8" class="chart"></div>
+
+
+
+	<script src="gaugewidget.js"></script>
+	<script src="gauge_chart1_params.js"></script>
+   	<script src="gaugemulti.js"></script>
+</body>
+</html>

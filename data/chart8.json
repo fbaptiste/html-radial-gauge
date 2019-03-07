@@ -1,0 +1,111 @@
+{
+	"gauge": {
+		"value": 75.2								
+		,"maxValue": 100 							
+		,"markerValue": 58 						
+		
+		,"paddingTopPerc": 5 						
+		,"paddingBottomPerc": 5 					
+
+
+		,"background": {
+			"gradient": "20-#c1c1c1:40-#e1e1e1" 	
+			,"borderColor": "white"				
+			,"borderThicknessPerc": 0				
+		}
+
+
+		,"indicator": {
+			"thicknessPerc": 40					
+			,"gradient": "0-#6e3cff:55-#85ff2d:75"	
+			,"animated": true						
+			,"animationDuration": 800				
+			,"animationEasing": "<>"				
+
+
+			,"text": {
+				"display": true 					
+				,"precision": 1 					
+				,"sizePerc": 90					
+				,"family": "Arial, sans-serif" 	
+				,"color": "white"					
+				,"weight": "normal"					
+				,"style": "normal"				
+				,"offset": {					
+ 					"xPerc": 0 					
+					,"yPerc": -8 				
+				}
+			}
+		}
+
+
+		,"marker": {
+			"triangle": {
+				"display": true					
+				,"animated": true 				
+				,"animationDuration": 1000 		
+				,"animationEasing": "<>"		
+				,"gradient": "45-red:10-yellow"	
+				,"sizePerc": 100 	 			
+				,"aspectRatio": 1.1 			
+				,"offsetPerc": 50				
+				,"notched": true 				
+			}
+		}
+	}
+
+
+	,"background": {
+		"fillColor": "#000000"					
+	}
+
+
+
+	,"topLegend": {
+		"display": true
+		,"heightPerc": 25  						
+		,"prefix": "Score"
+		,"value": ""							
+		,"suffix": ""							
+		,"fontSizePerc": 80						
+		,"fontFamily": "Arial, sans-serif" 		
+		,"fontColor": "#d1d1d1"					
+		,"fontWeight": "bold"					
+		,"fontStyle": "normal"					
+		,"hAlign": "center" 					
+		,"displayMarkerSymbol": false			
+	}
+
+	,"bottomLegend": {
+		"display": true
+		,"heightPerc": 20  						
+		,"prefix": "Other Score: "
+		,"value": "<<markervalue>>"				
+		,"suffix": ""							
+		,"fontSizePerc": 80						
+		,"fontFamily": "Arial, sans-serif" 		
+		,"fontColor": "red"						
+		,"fontWeight": "normal"					
+		,"fontStyle": "normal"					
+		,"hAlign": "center" 						
+		,"displayMarkerSymbol": true 			
+	}
+
+	,"hoverLegend": {
+		"display": true,								
+		"line1Text": "Score 2: ",
+		"line1Value": "<<value>>",					
+		"line2Text": "Score 3: ",
+		"line2Value": "<<markervalue>>",				
+		"timeOut": 2000								
+	}
+
+
+	,"paddingTopPerc": 0 						
+	,"paddingBottomPerc": 1						
+	,"paddingLeftRightPerc": 1					
+
+	,"svgResizeKeepAspectRatio": true
+}
+
+

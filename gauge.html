@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gauge Widget</title>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="raphael-min.js"></script>
+   	
+    <link rel="stylesheet" href="FlexiJsonEditor/jsoneditor.css"/>
+    <script src="FlexiJsonEditor/jquery.jsoneditor.js"></script>
+
+	<style>
+        body{
+            background-color: #f1f1f1;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .chart {
+			width: 400px;
+			height: 300px;
+        }
+
+        .chart svg { height: 100%; width: 100%;}
+
+
+        .radialkpi-tooltip-body {
+            display: table;
+            background-color: #FFFCB1;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid #FFC7C7;
+            font-size: 0.8em;
+            font-family: Arial, sans-serif;
+            pointer-events:none;
+        }
+
+        .radialkpi-tooltip-line-1 {
+            color: blue;
+        }
+
+        .radialkpi-tooltip-line-2 {
+            color: red;
+        }
+
+        .radialkpi-tooltip-legend {
+            font-weight: bold;
+            padding-right: 8px;
+        }
+
+        .radialkpi-tooltip-line-1  .radialkpi-tooltip-value {
+            font-weight: bold;
+        }
+        
+      
+    </style>
+	
+</head>
+<body>
+    
+
+
+	<table>
+        <tr>
+            <td style="text-align: left;">
+                <input id = "button1" type="button" value="Random Values"></input>
+                <input id = "button1Up" type="button" value="Resize Up"></input>
+                <input id = "button1Down" type="button" value="Resize Down"></input>
+            </td>
+            <td>
+                <!--<input id="button2" type="button" value="Update Values" ></input>-->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="chart1" class="chart"></div>
+            </td>
+            <td>
+                <div id="chart2" class="chart"></div>
+            </td> 
+        </tr>
+        
+        </table>
+
+        <div style="font-size: 1.8em; padding-top: 20px; font-weight: bold;">Modify Values</div>
+        <div id="jsoneditor" class="json-editor"></div>
+
+	<script src="gaugewidget.js"></script>
+	<script src="gauge_chart1_params.js"></script>
+   	<script src="gauge.js"></script>
+</body>
+</html>
